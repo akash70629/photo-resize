@@ -1,3 +1,24 @@
+# Photo Resizer App ✂
+<br/>
+
+live link 
+# https://photo-resizer.netlify.app
+
+<br/>
+
+# Feel free to create issues and pull requests in this repo😊
+
+<br/>
+
+Image preview
+![image](https://github.com/user-attachments/assets/6e8686a9-7f83-4783-8c40-a61a6fad80e8)
+
+![image](https://github.com/user-attachments/assets/e8a235a1-0c04-445c-af81-8941bf72e87a)
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
