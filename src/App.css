@@ -115,6 +115,7 @@
   right: 38%;
   bottom: 55%;
   cursor: pointer;
+  pointer-events:painted;
 }
 
 
@@ -181,6 +182,7 @@
 
   .ibutton{
     right: 32%;
+    pointer-events: all;
   }
 }
 
@@ -236,5 +238,6 @@
 
   .ibutton{
     right: 20%;
+    pointer-events:all;
   }
 }

@@ -1,12 +1,12 @@
-import React, { Component } from "react";
 import Resizer from "@meghoshpritam/react-image-file-resizer";
+import React, { Component } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './App.css';
-import Footer from "./Components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Pricing from "./Components/Pricing";
 import About from "./Components/About";
 import Features from "./Components/Features";
-
+import Footer from "./Components/Footer";
+import Pricing from "./Components/Pricing";
+import TitleTooltip from "./Components/TitleTooltip";
 
 
 class App extends Component {
@@ -89,8 +89,6 @@ class App extends Component {
       link.click();
     }
   }
-
-
 
 
 
@@ -191,13 +189,7 @@ class App extends Component {
                     <img src="https://www.reduceimages.com/img/open-lock.svg" alt="Unlock" />
                   )}
                 </button>
-
-                <span
-                  className="ibutton"
-                  title="Locks width and height to make the final image proportional to the original"
-                >
-                  ⓘ
-                </span>
+                <TitleTooltip/>
               </div>
 
               <div className="row">
