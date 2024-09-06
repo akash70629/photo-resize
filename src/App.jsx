@@ -107,7 +107,7 @@ class App extends Component {
 
             <div className="dropArea">
               {this.state.image ? (
-                
+
                 <div className="selectedImageContainer">
                   <img
                     src={URL.createObjectURL(this.state.image)}
@@ -115,7 +115,7 @@ class App extends Component {
                     className="selectedImage" />
 
                   <br />
-                  
+
                   <button
                     className="removeImageButton btn btn-primary"
                     onClick={() => this.setState({ image: null, resizedImage: "" })}
@@ -217,6 +217,9 @@ class App extends Component {
                     <option value="SVG">SVG</option>
                   </select>
                 </div>
+
+                {/* Don't know why Quality is not working  👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼*/}
+
                 {/* <div className="inputGroup">
                   <label style={{ fontWeight: "bold" }}>Quality</label>
                   <input
@@ -228,6 +231,23 @@ class App extends Component {
                     className="input"
                   />
                 </div> */}
+
+
+
+
+                {/* image compress input field , change this as needed  👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼*/}
+
+
+                {/* <div >
+                  <label style={{ fontWeight: "bold" }}>File Size</label>
+                  <input type="number" />
+                  <select className="format-style">
+                    <option value="Mb">mb</option>
+                    <option value="Kb">kb</option>
+                  </select>
+                </div> */}
+
+
               </div>
               <button className="button" onClick={this.handleResize}>
                 Resize Image
