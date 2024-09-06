@@ -11,9 +11,11 @@ live link
 <br/>
 
 Image preview
-![image](https://github.com/user-attachments/assets/6e8686a9-7f83-4783-8c40-a61a6fad80e8)
+![image](https://github.com/user-attachments/assets/e190123b-ce0f-4466-9441-68f9db974331)
 
-![image](https://github.com/user-attachments/assets/e8a235a1-0c04-445c-af81-8941bf72e87a)
+
+![image](https://github.com/user-attachments/assets/5d893985-1b39-4721-bcd7-d25217b7d122)
+
 
 
 
