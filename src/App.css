@@ -1,26 +1,33 @@
+body {
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
 .container {
-  max-width: 70%; 
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
-  height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .heading {
-  font-size: 40px; 
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
 .uploader {
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .dropArea {
   border: 2px dashed #007bff;
-  padding: 2rem; 
+  padding: 1rem;
   border-radius: 8px;
-  background-color: #f8f9fa;
   position: relative;
 }
 
@@ -45,7 +52,7 @@
 
 .selectImageButton {
   padding: 10px 20px;
-  font-size: 1rem; 
+  font-size: 1rem;
   color: #ffffff;
   background-color: #007bff;
   border: none;
@@ -60,68 +67,78 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 
 .inputGroup {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   margin-right: 10px;
   margin-bottom: 15px;
-  width: 30%; 
+  width: 30%;
 }
 
 .input {
   padding: 15px;
-  font-size: 1rem; 
-  width: 40%; 
+  font-size: 1rem;
+  width: 40%;
   max-width: 100px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-top: 8px;
+  border-radius: 5px;
+  border: none;
 }
 
 .select {
   padding: 8px;
-  font-size: 1rem; 
-  width: 50%; 
+  font-size: 1rem;
+  width: 50%;
   max-width: 140px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-top: 5px;
+  border-radius: 5px;
 }
 
+.format-style {
+  padding: 10px;
+  margin-top: auto;
+  border-radius: 5px;
+}
+
+
 .lockButton {
-  padding: 10px; 
-  font-size: 1rem; 
-  background-color: #ebe6e6;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #e9e9f7d3;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 20%; 
-  box-sizing: border-box; 
+  width: 20%;
+  box-sizing: border-box;
   margin-top: 5px;
-  display: flex; 
+  display: flex;
   justify-content: center;
-  align-items: center; 
-  margin-left: auto; 
-  margin-right: auto; 
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-.ibutton{
+.ibutton {
   position: relative;
   right: 38%;
   bottom: 55%;
   cursor: pointer;
-  pointer-events:painted;
+  pointer-events: painted;
 }
 
 
 .button {
-  padding: 10px 20px;
-  font-size: 1rem; 
+  padding: 9px 12px;
+  font-size: 1rem;
   color: #ffffff;
   background-color: #007bff;
   border: none;
@@ -129,58 +146,73 @@
   cursor: pointer;
   margin-top: 20px;
   width: 20%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin-bottom: 50px;
 }
 
 /* Image Preview */
+
+/* Sekected Image  */
 .selectedImage {
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 5px;
   margin: 10px 0;
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
 }
 
+/* Resized Image  */
+.previewImage {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  margin-top: 30px;
+  border: 2px dashed #007bff ;
+  padding: 5px;
+  border-radius: 8px;
+}
 
-.footer {
-  position: relative; 
-  top: 60%;
-  left: 0px;
-  width: 100%; 
+.lfooter {
+  width: 100%;
   display: grid;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   padding-top: 10px;
 }
 
-
+:where(body) {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
 
 
 /* Media Queries for Smaller Screens */
 
 @media (max-width: 912px) {
   .input {
-    width: 51%; 
-    padding: 12px;
+    width: 60%;
+    padding: 10px;
+    margin-top: auto;
   }
 
   .select {
-    width: 100%; 
+    width: 100%;
     padding: 5px;
   }
 
   .lockButton {
-    width: 30%; 
+    width: 30%;
   }
+
   .button {
     padding: 10px 7px;
     font-size: 0.9rem;
     width: 30%;
   }
 
-  .ibutton{
+  .ibutton {
     right: 32%;
     pointer-events: all;
   }
@@ -199,6 +231,7 @@
 
   .button {
     font-size: 0.9rem;
+    width: 40%;
   }
 
   .inputGroup {
@@ -206,7 +239,7 @@
   }
 
   .row {
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 }
 
@@ -221,13 +254,13 @@
   }
 
   .button {
-    padding: 7px 7px;
+    padding: 10px 4px;
     font-size: 0.8rem;
-    width: 45%;
+    width: 50%;
   }
 
   .inputGroup {
-    width: 100%; 
+    width: 100%;
   }
 
   .lockButton {
@@ -236,8 +269,8 @@
     width: 45%;
   }
 
-  .ibutton{
+  .ibutton {
     right: 20%;
-    pointer-events:all;
+    pointer-events: all;
   }
 }

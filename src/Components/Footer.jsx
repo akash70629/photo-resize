@@ -5,26 +5,26 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="lfooter">
 
-            <ul className="nav justify-content-center border-bottom pb-3 mb-0">
+            <ul className="nav justify-content-center border-bottom pb-2 mb-0">
               <li className="nav-item">
-                <Link to="/" className="nav-link px-2 text-muted">Home</Link>
+                <Link to="/" className="nav-link px-2 text-dark">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/Features" className="nav-link px-2 text-muted">Features</Link>
+                <Link to="/Features" className="nav-link px-2 text-dark">Features</Link>
               </li>
               <li className="nav-item">
-                <Link to="/Pricing" className="nav-link px-2 text-muted">Pricing</Link>
+                <Link to="/Pricing" className="nav-link px-2 text-dark">Pricing</Link>
               </li>
               {/* <li className="nav-item">
                 <Link to="#" className="nav-link px-2 text-muted">FAQs</Link>
               </li> */}
               <li className="nav-item">
-                <Link to="/About" className="nav-link px-2 text-muted">About</Link>
+                <Link to="/About" className="nav-link px-2 text-dark">About</Link>
               </li>
             </ul>
-            <p className="text-center text-muted mb-3">© 2024 Company, Inc</p>
+            <p className="text-center text-dark mb-0">© 2024 Company, Inc</p>
         
       </div>
   )

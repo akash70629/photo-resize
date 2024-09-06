@@ -7,9 +7,11 @@ const About = () => {
             <div>
                 <br />
                 <br />
-                <h1>~ About ~</h1>
-                <h3>This is a free Web-tool to manipulate Photos 😉</h3>
+                <h2>~ About ~</h2>
+                <br />
+                <h5>This is a free Web-tool to manipulate Photos 😉</h5>
             </div>
+            <br /> <br /> <br />
             <Footer />
         </>
     )

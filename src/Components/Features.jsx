@@ -5,7 +5,7 @@ const Features = () => {
   return (
     <>
         <br /><br />
-        <h1>~ Features ~</h1>
+        <h2>~ Features ~</h2>
         <br />
 
     <strong>Customizable Photo Resizing:</strong> Resize your photos with precision by specifying dimensions in any unit of length (pixels, inches, centimeters, etc.). Perfect for adjusting images for websites, print, or social media platforms.
@@ -40,6 +40,9 @@ const Features = () => {
     <br />
     <h4>Stay tuned for more exciting updates to enhance your photo editing experience! 😉</h4>
     
+
+    <br /> <br /> <br />
+
     <Footer />
     </>
   )

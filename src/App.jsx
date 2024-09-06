@@ -103,22 +103,21 @@ class App extends Component {
 
           <div className="uploader">
             <h2 className="heading">Resize an Image</h2>
+
+
             <div className="dropArea">
               {this.state.image ? (
+                
                 <div className="selectedImageContainer">
                   <img
                     src={URL.createObjectURL(this.state.image)}
                     alt="Selected Image"
-                    className="selectedImage"
-                    style={{
-                      maxWidth: "100%",
-                      maxHeight: "500px",
-                      objectFit: "contain",
-                    }}
-                  />
+                    className="selectedImage" />
+
                   <br />
+                  
                   <button
-                    className="removeImageButton"
+                    className="removeImageButton btn btn-primary"
                     onClick={() => this.setState({ image: null, resizedImage: "" })}
                   >
                     Delete
@@ -154,7 +153,7 @@ class App extends Component {
                     type="number"
                     min={1}
                     value={this.state.width}
-                    onChange={this.handleWidthChange} 
+                    onChange={this.handleWidthChange}
                     className="input"
                   />
                 </div>
@@ -189,7 +188,7 @@ class App extends Component {
                     <img src="https://www.reduceimages.com/img/open-lock.svg" alt="Unlock" />
                   )}
                 </button>
-                <TitleTooltip/>
+                <TitleTooltip />
               </div>
 
               <div className="row">
@@ -205,10 +204,10 @@ class App extends Component {
                 </div>
                 <div className="inputGroup">
                   <label style={{ fontWeight: "bold" }}>Format</label>
-                  <select
+                  <select className="format-style"
                     value={this.state.format}
                     onChange={(e) => this.setState({ format: e.target.value })}
-                    
+
                   >
                     <option value="JPG">JPG</option>
                     <option value="PNG">PNG</option>
@@ -240,14 +239,7 @@ class App extends Component {
                   <img
                     src={this.state.resizedImage}
                     alt="Resized Preview"
-                    className="previewImage"
-                    style={{
-                      maxWidth: "80%",
-                      maxHeight: "500px",
-                      objectFit: "contain",
-                      marginTop: "20px",
-                    }}
-                  />
+                    className="previewImage" />
                   <br />
                   <button className="button" onClick={this.handleDownload}>
                     Download Image

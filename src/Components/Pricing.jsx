@@ -7,12 +7,14 @@ const Pricing = () => {
     <>
       <div>
         <br />  <br />
-        <h1>~ Pricing ~</h1>
+        <h2>~ Pricing ~</h2>
         <br />
         <br />
-        <h3>Good News !!!!!</h3>
+        <h4>Good News !!!!!</h4>
         <h4>This is Absolutely Free😉</h4>
       </div>
+
+      <br /> <br /> <br />
     <Footer />
     </>
   )
