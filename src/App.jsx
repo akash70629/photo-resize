@@ -22,6 +22,7 @@ class App extends Component {
       lockAspectRatio: true,
       image: null,
       resizedImage: "",
+      unit: "pixels",
     };
     this.fileChangedHandler = this.fileChangedHandler.bind(this);
     this.handleWidthChange = this.handleWidthChange.bind(this);
